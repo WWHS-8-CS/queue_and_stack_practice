@@ -18,7 +18,7 @@ public void addEntry(String time, String date, String id)
 public String returnEntry(int index)
 {
 	int place = index*3;
-	return list.get(place - 1) + " " + list.get(place) + " " + list.get(place + 1);
+	return list.get(place - 1) + " " + list.get(place - 2) + " " + list.get(place - 3);
 }
 public int returnNumberOfEntries()
 {
@@ -32,4 +32,3 @@ System.out.println(a.returnEntry(1));
 System.out.println(a.returnEntry(2));
 }
 }
-
